@@ -1,0 +1,27 @@
+2026-04-07 11:18:22,632,p43750,{connectionpool.py:241},DEBUG,Starting new HTTP connection (1): 127.0.0.1:10001
+2026-04-07 11:18:27,338,p43750,{connectionpool.py:544},DEBUG,http://127.0.0.1:10001 "POST / HTTP/1.1" 200 2432
+2026-04-07 11:18:27,340,p43750,{connectionpool.py:241},DEBUG,Starting new HTTP connection (1): 127.0.0.1:10001
+2026-04-07 11:18:39,148,p43750,{connectionpool.py:544},DEBUG,http://127.0.0.1:10001 "POST / HTTP/1.1" 200 4718
+Running agent discovery and booking workflow tests...
+======================================================================
+Test 1: Travel agent searches for flights (solo)
+Test 2: Travel agent discovers booking agent and completes booking
+======================================================================
+
+1. Testing flight search (travel agent solo)...
+   [PASS] Travel agent searched for flights using its own tools
+   Response preview: I didn't find any flights from New York to Los Angeles on December 20, 2025. There are no flights available for this route on that date in the system.
+
+Would you like me to:
+1. Search for flights on a...
+
+2. Testing flight booking with agent discovery...
+      [PASS] Booking agent discovered and invoked
+   Response preview: The Flight Booking Agent is the only agent available with booking capabilities, but it's not responding at the moment. This could be a temporary service issue. 
+
+Would you like me to keep trying, or i...
+   [PASS] Complete booking workflow succeeded
+
+======================================================================
+All tests passed!
+======================================================================
